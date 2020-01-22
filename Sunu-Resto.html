@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Subu-resto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.min.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-minimal.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+  
+    <style>
+    html,body
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .container-fluid
+    {
+        padding: 0;
+    }
+    .banner
+    {
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+    }
+    .ban
+     {
+   width: 100%;
+   max-width: 100%;
+   height: 400px;
+     }
+     .ban img
+     {
+         width: 100%;
+         max-width: 100%;
+         height: 400px;
+     }
+    </style>
+</head>
+  <body>
+      
+    <!--Nav-bar-->
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #556e1a;">
+    <a class="navbar-brand" href="#">Sunu-Resto</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="Sunu-Resto.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commande</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#" id="link-pizza">Pizza </a>
+                    <a class="dropdown-item" href="#" id="link-sandwich">Sandwich </a>
+                        <a class="dropdown-item" href="#" id="link-jus">Jus </a>
+                        <a class="dropdown-item" href="#" id="link-glace">Glace </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Images-->
+<div class="container-fluid banner">
+  <div class="ban">
+    <img src="img/3.jpg" alt="" srcset="">
+  </div>
+</div>
+<!--Text-->
+<div style="height: 70px;">
+    
+</div>
+
+<div class="container card-columns" id="container-pizza">
+</div>
+<div class="container card-columns" id="container-glace" style="display: none;">
+</div>
+
+<div class="container card-columns" id="container-jus" style="display: none;">
+
+
+</div>
+<div class="container card-columns" id="container-sandwich" style="display: none;">
+
+
+</div>
+
+
+
+ <!--Commande-->
+<div class="container cmd">
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="img/pizza7.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Pizza</h5>
+                <p class="card-text">3500fr</p>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-dark" id="btn-add">Acheter</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="img/sand4.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Sandwich</h5>
+                <p class="card-text">2050fr</p>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-dark" id="btn-add">Acheter</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="img/glace.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Glace</h5>
+                <p class="card-text">950fr</p>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-dark" id="btn-add">Acheter</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js'></script>      
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js'></script>
+
+
+    <script>
+        var foodStock = [
+                "11.jpg",
+                "12.jpg",
+                "13.jpg",
+                "15.jpg",
+                "16.jpg",
+                "17.jpg",
+                "18.jpg",
+                "2.jpg",
+                "3.jpg",
+                "6.jpg",
+                "7.jpg",
+                "8.jpg",
+                "9.jpg",
+                "glace.png",
+                "glace1.png",
+                "glace3.png",
+                "glace4.png",
+                "glace5.png",
+                "image1.jpg",
+                "image2.jpg",
+                "image3.jpg",
+                "image4.jpg",
+                "image5.jpg",
+                "img3.jpg",
+                "img4.jpg",
+                "img5.jpg",
+                "img6.jpg",
+                "pizza.png",
+                "pizza2.png",
+                "pizza3.png",
+                "pizza6.png",
+                "pizza7.png",
+                "png3.png",
+                "resto2.png",
+                "resto3.png",
+                "sand.png",
+                "sand3.png",
+                "sand4.png",
+                           ];
+        function getRandomImage() {
+            max = foodStock.length;
+            min = 0;
+            rand = Math.floor(Math.random() * (max - min) + min);
+            return "./img/" + foodStock[rand];
+        }
+
+        $(document).ready(function () {
+
+            //initialisation des div avec les elements dynamiques
+            for (let index = 0; index < 10; index++) {
+                var source = $("#commande-template").html();
+                var template = Handlebars.compile(source);
+                var context = { "id": faker.random.uuid(), "titre": faker.lorem.word(), "description": faker.lorem.sentence(), "source": getRandomImage(), "specialite": "pizza" };
+                var html = template(context);
+                $("#container-pizza").append(html);
+
+            }
+            for (let index = 0; index < 10; index++) {
+                var source = $("#commande-template").html();
+                var template = Handlebars.compile(source);
+                var context = { "id": faker.random.uuid(), "titre": faker.lorem.word(), "description": faker.lorem.sentence(), "source": getRandomImage(), "specialite": "jus" };
+                var html = template(context);
+                $("#container-jus").append(html);
+
+
+            }
+            for (let index = 0; index < 10; index++) {
+                var source = $("#commande-template").html();
+                var template = Handlebars.compile(source);
+                var context = { "id": faker.random.uuid(), "titre": faker.lorem.word(), "description": faker.lorem.sentence(), "source": getRandomImage(), "specialite": "sandwich" };
+                var html = template(context);
+                $("#container-sandwich").append(html);
+
+            }
+             for (let index = 0; index < 10; index++) {
+                var source = $("#commande-template").html();
+                var template = Handlebars.compile(source);
+                var context = { "id": faker.random.uuid(), "titre": faker.lorem.word(), "description": faker.lorem.sentence(), "source": getRandomImage(), "specialite": "glace" };
+                var html = template(context);
+                $("#container-glace").append(html);
+
+            }
+
+
+
+
+            $("#link-pizza").click(function () {
+                $("#container-pizza").fadeIn(function () {
+                    $("#container-jus").fadeOut(500);
+                    $("#container-sandwich").fadeOut(500);
+                     $("#container-glace").fadeOut(500);
+
+                });
+            });
+            $("#link-jus").click(function () {
+                $("#container-jus").fadeIn(function () {
+                    $("#container-pizza").fadeOut(500);
+                    $("#container-sandwich").fadeOut(500);
+                     $("#container-glace").fadeOut(500);
+
+                });
+            });
+
+                $("#link-sandwich").click(function () {
+                $("#container-sandwich").fadeIn(function () {
+                    $("#container-pizza").fadeOut(500);
+                    $("#container-jus").fadeOut(500);
+                        $("#container-glace").fadeOut(500);
+
+                });
+            });
+            
+            $("#link-glace").click(function () {
+                $("#container-glace").fadeIn(function () {
+                    $("#container-pizza").fadeOut(500);
+                    $("#container-jus").fadeOut(500);
+                            $("#container-sandwich").fadeOut(500);
+
+                });
+            });
+            
+
+
+
+
+        });
+
+
+
+    </script>
+    <script type="text/x-handlebars-template" id="commande-template">
+            <div class="card animated bounceIn" style="background-color:rgb(246, 246, 246); border-color:rgb(255, 255, 255);">
+                <img class="card-img-top" width="280px" height="280px" src="{{source}}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">{{titre}}</h4>
+                    <span class="badge badge-pill badge-info">{{specialite}}</span>
+                    <!-- <p class="card-text">{{specialite}}</p> -->
+                    <p class="card-text">{{description}}</p>
+                    <div style="width:100%;display: flex;justify-content: center;">
+                        <div class="btn btn-primary btn-commander" data-id="{{id}}" data-titre="{{titre}}" data-description="{{description}}">commander</div>
+                    </div>
+                </div>
+            </div>
+    </script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".btn-commander").click(function (e) {
+                e.preventDefault();
+                Swal.fire({
+                    title: 'Confirmer',
+
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Oui'
+                }).then((result) => {
+                    if (result.value) {
+                        Swal.fire(
+                            'Confirmer',
+                          
+                            'success'
+                        )
+                        console.log("text");
+                        window.location.href = "./validation.html";
+
+                    }
+                })
+
+            });
+
+        });
+
+
+    </script>
+    <script>
+    $(document).ready(function () {
+        
+          $("#btn-add").click(function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Confirmer',
+
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Oui'
+            }).then((result) => {
+                if (result.value) {
+                    Swal.fire(
+                        'Confirmer',
+
+                        'success'
+                    )
+                    console.log("text");
+                    window.location.href = "./validation.html";
+
+                }
+            })
+
+        });
+ });
+    
+    </script>
+
+
+<script>
+     $(document).ready(function () {
+         var commander;
+
+   // $("#container-pizza").append("<option value='" + element + "'>" + element + "</option>");
+     });
+ 
+</script>
+
+</body>
+</html>
